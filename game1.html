@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shadow Arena</title>
+  <link rel="stylesheet" href="design.css">
+</head>
+<body>
+  <main class="game">
+    <h1>SHADOW ARENA</h1>
+    <p class="subtitle">ONE FIGHT. ONE WINNER.</p>
+
+    <section class="health-area">
+      <div class="health-box">
+        <div class="label">
+          <span>PLAYER</span><span id="playerNumber">100</span>
+        </div>
+        <div class="health-bg">
+          <div id="playerHealth" class="health"></div>
+        </div>
+      </div>
+
+      <div class="health-box">
+        <div class="label">
+          <span>ENEMY</span><span id="enemyNumber">100</span>
+        </div>
+        <div class="health-bg">
+          <div id="enemyHealth" class="health enemy-health"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="arena">
+      <div class="moon"></div>
+      <div class="mountain mountain-back"></div>
+      <div class="mountain mountain-front"></div>
+      <div class="ground"></div>
+
+      <div id="player" class="fighter player">
+        <div class="head"></div>
+        <div class="body"></div>
+        <div class="arm arm1"></div>
+        <div class="arm arm2"></div>
+        <div class="leg leg1"></div>
+        <div class="leg leg2"></div>
+      </div>
+
+      <div id="enemy" class="fighter enemy">
+        <div class="head"></div>
+        <div class="body"></div>
+        <div class="arm arm1"></div>
+        <div class="arm arm2"></div>
+        <div class="leg leg1"></div>
+        <div class="leg leg2"></div>
+      </div>
+
+      <div id="message">GET READY!</div>
+    </section>
+
+    <p class="help">
+      A / D: MOVE &nbsp; W: JUMP &nbsp; J: PUNCH
+      <br>
+      K: KICK &nbsp; L: BLOCK
+    </p>
+
+    <section class="controls">
+      <button data-key="a">◀</button>
+      <button data-key="d">▶</button>
+      <button data-key="w">JUMP</button>
+      <button data-key="j">PUNCH</button>
+      <button data-key="k">KICK</button>
+      <button data-key="l">BLOCK</button>
+    </section>
+
+    <button id="restart">↻ RESTART FIGHT</button>
+    <p class="footer">SHADOW ARENA · FIGHT TO SURVIVE</p>
+  </main>
+
+  <script src="fight.js"></script>
+</body>
+</html>
